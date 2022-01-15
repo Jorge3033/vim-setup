@@ -16,7 +16,9 @@ set encoding=UTF-8
 set nocompatible
 set laststatus=2
 
+call plug#begin('~/.vim/plugged')
 so ~/vimSetUp/plug/plug.vim
+call plug#end()
 
 let g:formatterpath = ['/some/path/to/a/folder', '/home/superman/formatters']
 noremap <Leader>fd :Autoformat<CR>

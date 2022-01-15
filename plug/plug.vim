@@ -1,4 +1,3 @@
-call plug#begin('~/.vim/plugged')
 "Global
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
@@ -39,6 +38,3 @@ Plug 'preservim/nerdcommenter'
 
 "Go set up
 so ~/vimSetUp/plug/goSetUp.vim
-
-
-call plug#end()
