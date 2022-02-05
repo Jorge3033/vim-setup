@@ -34,7 +34,7 @@ Plug 'SirVer/ultisnips'
 "Coc
 Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'mattn/emmet-vim'
-#########################
+"#########################
 Plug 'preservim/nerdcommenter'
 
 "Go set up
