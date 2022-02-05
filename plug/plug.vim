@@ -36,7 +36,7 @@ Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
 Plug 'mattn/emmet-vim'
 "#########################
 Plug 'preservim/nerdcommenter'
-
+Plug 'github/copilot.vim'
 "Go set up
 so ~/vim-setup/plug/goSetUp.vim
 call plug#end()
