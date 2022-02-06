@@ -32,11 +32,38 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'SirVer/ultisnips'
 
 "Coc
-Plug 'neoclide/coc.nvim', {'do': 'yarn install --frozen-lockfile'}
+Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
 Plug 'mattn/emmet-vim'
-#########################
 Plug 'preservim/nerdcommenter'
-
+Plug 'github/copilot.vim'
 "Go set up
-so ~/vim-setup/plug/goSetUp.vim
+"so ~/vim-setup/plug/goSetUp.vim
+"react JS whith TS
+Plug 'pangloss/vim-javascript'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
+Plug 'jparise/vim-graphql'
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+Plug 'SirVer/ultisnips'
+Plug 'mlaursen/vim-react-snippets'
+
+Plug 'mattn/emmet-vim'
+Plug 'pangloss/vim-javascript'
+Plug 'mxw/vim-jsx'
+
+"CSS
+Plug 'ap/vim-css-color'
+Plug 'SirVer/ultisnips'
+
+
+
 call plug#end()
+
+"react TS
+autocmd BufEnter *.{js,jsx,ts,tsx} :syntax sync fromstart
+autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
+let g:coc_global_extensions = [
+  \ 'coc-tsserver'
+  \ ]
