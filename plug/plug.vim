@@ -34,6 +34,7 @@ Plug 'SirVer/ultisnips'
 "Coc
 Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
 Plug 'mattn/emmet-vim'
+"#########################
 Plug 'preservim/nerdcommenter'
 Plug 'github/copilot.vim'
 "Go set up
