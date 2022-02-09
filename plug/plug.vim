@@ -3,6 +3,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'terryma/vim-multiple-cursors'
 Plug 'ryanoasis/vim-devicons'
 Plug 'Chiel92/vim-autoformat'
+Plug 'vim-autoformat/vim-autoformat'
 Plug 'itchyny/lightline.vim'
 "typing
 Plug 'jiangmiao/auto-pairs'
@@ -57,8 +58,9 @@ Plug 'mxw/vim-jsx'
 "CSS
 Plug 'ap/vim-css-color'
 Plug 'SirVer/ultisnips'
-
-
+"js
+Plug '1995eaton/vim-better-javascript-completion'
+Plug 'w0rp/ale'
 
 call plug#end()
 
@@ -68,3 +70,23 @@ autocmd BufLeave *.{js,jsx,ts,tsx} :syntax sync clear
 let g:coc_global_extensions = [
   \ 'coc-tsserver'
   \ ]
+"js 
+let g:vimjs#casesensistive = 1
+" Enabled by default. flip the value to make completion matches case insensitive
+
+let g:vimjs#smartcomplete = 0
+" Disabled by default. Enabling this will let vim complete matches at any location
+" e.g. typing 'ocument' will suggest 'document' if enabled.
+
+let g:vimjs#chromeapis = 0
+" Disabled by default. Toggling this will enable completion for a number of Chrome's JavaScript extension APIs
+"ale_fixers
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+let g:ale_fixers = {
+\   '*': ['remove_trailing_lines', 'trim_whitespace'],
+\   'javascript': ['eslint'],
+\}
+let g:ale_fix_on_save = 1
+let g:ale_completion_enabled = 1
+set omnifunc=ale#completion#OmniFunc
+let g:ale_completion_autoimport = 1
