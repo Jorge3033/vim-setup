@@ -12,14 +12,14 @@ Plug 'tpope/vim-surround'
 "Themes
 Plug 'morhetz/gruvbox'
 "#############
-Plug 'Yggdroot/indentLine'
+"Plug 'Yggdroot/indentLine'
 Plug 'easymotion/vim-easymotion'
 Plug 'christoomey/vim-tmux-navigator'
 Plug 'sheerun/vim-polyglot'
 Plug 'junegunn/vim-easy-align'
 Plug 'https://github.com/junegunn/vim-github-dashboard.git'
 " Multiple Plug commands can be written in a single line using | separators
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
 " On-demand loading
 Plug 'scrooloose/nerdtree', { 'on':  'NERDTreeToggle' }
@@ -30,7 +30,7 @@ Plug 'rdnetto/YCM-Generator', { 'branch': 'stable' }
 Plug 'junegunn/fzf.vim'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 
 "Coc
 Plug 'neoclide/coc.nvim', {'do': 'npm install --frozen-lockfile'}
@@ -48,7 +48,7 @@ Plug 'styled-components/vim-styled-components', { 'branch': 'main' }
 Plug 'jparise/vim-graphql'
 "Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 Plug 'mlaursen/vim-react-snippets'
 
 Plug 'mattn/emmet-vim'
@@ -57,10 +57,15 @@ Plug 'mxw/vim-jsx'
 
 "CSS
 Plug 'ap/vim-css-color'
-Plug 'SirVer/ultisnips'
+"Plug 'SirVer/ultisnips'
 "js
 Plug '1995eaton/vim-better-javascript-completion'
 Plug 'w0rp/ale'
+Plug 'AndrewRadev/tagalong.vim'
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'npm install --frozen-lockfile --production',
+  \ 'branch': 'release/0.x'
+  \ }
 
 call plug#end()
 
